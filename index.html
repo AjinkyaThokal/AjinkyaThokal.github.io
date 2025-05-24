@@ -323,12 +323,8 @@
         }
 
         .project-img {
-            width: 280px;
-            height: 280px;
-	    border-radius: 50%;
-	    object-fit: cover;
-	    border: 5px solid #6366f1;
-	    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            height: 200px;
             background: linear-gradient(135deg, #6366f1, #8b5fbf);
             display: flex;
             align-items: center;
@@ -336,8 +332,6 @@
             color: white;
             font-size: 1.2rem;
             font-weight: bold;
-	    flex-shrink: 0;
-	    text-align: center;
         }
 
         .project-content {
@@ -519,7 +513,6 @@
             .profile-img {
                 width: 250px;
                 height: 250px;
-		margin: 0 auto;
             }
 
             .cta-button {
@@ -604,7 +597,7 @@
             <h2>Technical Skills</h2>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3><span class="skill-icon">💻</span>Programming Languages</h3>
+                    <h3><span class="skill-icon">🐍</span>Programming Languages</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">Python</span>
                         <span class="skill-tag">R</span>
@@ -841,4 +834,4 @@
         // Observe all skill categories and project cards
         document.querySelectorAll('.skill-category, .project-card, .cert-card').forEach(element => {
 	    observer.observe(element);
-});
+	});
