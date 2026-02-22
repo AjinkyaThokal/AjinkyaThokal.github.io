@@ -556,11 +556,11 @@
                     </div>
                 </div>
                 <div class="contact-form-wrap reveal reveal-delay-1">
-                    <form id="contactForm">
-                        <div class="form-row"><label>Your Name</label><input type="text" placeholder="Jane Smith" required></div>
-                        <div class="form-row"><label>Email Address</label><input type="email" placeholder="jane@company.com" required></div>
-                        <div class="form-row"><label>Subject</label><input type="text" placeholder="Data analyst role / collaboration / other" required></div>
-                        <div class="form-row"><label>Message</label><textarea placeholder="Tell me a bit about the role or project…" required></textarea></div>
+                    <form id="contactForm" action="https://formspree.io/f/mqedgzqq" method="POST">
+                        <div class="form-row"><label>Your Name</label><input type="text" name="name" placeholder="Jane Smith" required></div>
+                        <div class="form-row"><label>Email Address</label><input type="email" name="email" placeholder="jane@company.com" required></div>
+                        <div class="form-row"><label>Subject</label><input type="text" name="subject" placeholder="Data analyst role / collaboration / other" required></div>
+                        <div class="form-row"><label>Message</label><textarea name="message" placeholder="Tell me a bit about the role or project…" required></textarea></div>
                         <button type="submit" class="btn-submit">Send message →</button>
                     </form>
                 </div>
