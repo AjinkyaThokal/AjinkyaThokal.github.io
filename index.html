@@ -639,14 +639,9 @@
         if (about) aboutObs.observe(about);
 
         document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
             const btn = this.querySelector('.btn-submit');
-            btn.textContent = 'Sending…'; btn.disabled = true;
-            setTimeout(() => {
-                btn.textContent = 'Message sent ✓'; btn.style.background = 'var(--teal)';
-                this.reset();
-                setTimeout(() => { btn.textContent = 'Send message →'; btn.style.background = ''; btn.disabled = false; }, 3500);
-            }, 1600);
+            btn.textContent = 'Sending…';
+            btn.disabled = true;
         });
     </script>
 </body>
